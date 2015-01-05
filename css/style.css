@@ -56,17 +56,7 @@ body {
    .header{
 	   margin: 0 0 60px 0;
    }
-     
-   .title {
- 	  margin: 180px 0px 0px 0px;   	
-   }  
-  
-  
-  .blueSection {
-	  background-color: #34ABDA;
-	  min-height: 400px;
-  }
-  
+       
   .logo {
 	  height: 60px;
   }
@@ -75,16 +65,14 @@ body {
 /* CHAT MAIN PAGE */  
   
   .chatBlockUs{
-	  margin: 0 0 14px 0;
-	  padding: 0 15% 0 15%;
-	  
-
+	  margin: 0 0 10px 5px;
   }
   
   .chatBlockThem{
-	  margin: 0 0 0 40px;
+	  margin: 0 5px 10px 0;	  
+
   }
-  
+    
   
   .chatUser{
 	  margin: 0 0 0 0;
@@ -98,19 +86,20 @@ body {
   
   
   .chatBubble{
-  	position: relative;
-  	background: #34ABDA;
-  	max-width: 470px;
-	min-width: 200px;
-  	margin: 0 0 0 20px;
-  	padding: 15px 25px 20px 25px;
+	  float: left;
+	  position: relative;
+	  background: #34ABDA;
+	  max-width: 470px;
+	  min-width: 100px;
 
-  	z-index: 1000;	
-	word-wrap: break-word;
-  	-webkit-border-radius: 10px;
-  	-moz-border-radius: 10px;
-  	border-radius: 20px;
-  	-webkit-transform: translate3d(0,0,0); /*Samsung android zindex problem fix? */
+	  padding: 15px 25px 20px 25px;
+	  
+	  z-index: 1000;	
+	  word-wrap: break-word;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 20px;
+	  -webkit-transform: translate3d(0,0,0); /*Samsung android zindex problem fix? */
 
   }
   
@@ -128,6 +117,20 @@ body {
 	  top: -8px;
 	  left: 40px;  
   }
+  
+  
+  
+/* Main Page: Content Sections */
+  
+  .title {
+	  margin: 26px 0px 0px 5px;   	
+  }  
+ 
+ 
+ .blueSection {
+  background-color: #34ABDA;
+  min-height: 400px;
+ }
   
   
   
@@ -151,17 +154,30 @@ body {
   
   .right{
    float: right;
-   position: relative;
-      padding: 0 0 0 0;
-	   margin: 0 0 0 0;
   }
   
   .left{
-   float: left;
-  	   position: relative;
-      padding: 0 0 0 0;
-	   margin: 0 0 0 0;
+	  float: left;
   }
+  
+  .hideXS{
+	  display: block;
+  }
+  
+  
+  
+  /* Media Screen Breakpoints */
+  
+  @media(max-width:480px) {
+	  
+	  .hideXS{
+		  display: none;
+	  }
+	  
+	  
+  }
+
+
   
 
   
