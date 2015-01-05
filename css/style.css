@@ -47,12 +47,6 @@ body {
 
 /* Header */   
 
-   .topbar{
-	   height: 5px;
-   	   background-color: #707070;
-	   
-   }
-
    .header{
 	   margin: 0 0 60px 0;
    }
@@ -62,7 +56,7 @@ body {
   }
   
   
-/* CHAT MAIN PAGE */  
+/* MAIN PAGE */  
   
   .chatBlockUs{
 	  margin: 0 0 10px 5px;
@@ -118,9 +112,10 @@ body {
 	  left: 40px;  
   }
   
+  .callout{
+	  background: black;
+  }
   
-  
-/* Main Page: Content Sections */
   
   .title {
 	  margin: 26px 0px 0px 5px;   	
@@ -138,6 +133,17 @@ body {
   
 /* Global Functions & Utilities  */
   
+  /* Standard resources */
+  
+  .circuloSmall img{
+	  height: 40px;
+  }
+  
+  .titleSmall {
+	  margin: 0px 0px 0px 0px;   
+  }  
+  
+  
   /* Color pallete */
   
   .whiteF{
@@ -148,19 +154,29 @@ body {
   	   background-color: #A8A8A8 ;
   }
   
+  .causalBar{
+   	height: 5px;
+	background-color: #707070;
+	background: url('../img/causal_lineaH.png') repeat-x;
+	background-position: top center;
+   
+  }
   
   
-  /* Postitioning & Alignment */
+  
+  
+  
+  /* Postitioning, Alignment & Special Media */
   
   .right{
-   float: right;
+	  float: right;
   }
   
   .left{
 	  float: left;
   }
   
-  .hideXS{
+  .hideSM{
 	  display: block;
   }
   
@@ -168,9 +184,9 @@ body {
   
   /* Media Screen Breakpoints */
   
-  @media(max-width:480px) {
+  @media(max-width:768px) {
 	  
-	  .hideXS{
+	  .hideSM{
 		  display: none;
 	  }
 	  
