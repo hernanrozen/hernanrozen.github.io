@@ -95,7 +95,7 @@ body {
 	  position: relative;
 	  background: #34ABDA;
 	  max-width: 470px;
-	  min-width: 270px;
+	  min-width: 400px;
 
 	  padding: 0px 10px 6px 20px;
 	  
@@ -128,12 +128,13 @@ body {
   
   .causalCard {
 	  text-align: center;
+	  background-color: white;
 	  background: url('../img/causal_curvas.png') no-repeat;
 	  background-position: top left;
-	  background-size: 90px 180px;	  
+	  background-size: 90px 183px;	  
       border: 1px solid #E7EAEC;
-	  height: 166px;
-	  width: 300px;
+	  height: 158.6px;
+	  width: 260px;
     	-webkit-border-radius: 10px;
     	-moz-border-radius:10px;
    		border-radius:10px;
@@ -142,9 +143,33 @@ body {
   	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
   }
   
-  .callout{
+  .causalCardBack{
+	  background-color: white;
+      border: 1px solid #E7EAEC;
+	  height: 158.6px;
+	  width: 260px;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius:10px;
+   		border-radius:10px;
+  	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+  	  	-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+  	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
 	  
   }
+
+  .welcome{
+	  margin-top: 80px;	  
+  }
+
+  
+  .caseStudy1{
+	  margin-top: 65px;	  
+  }
+  
+  .contactUs{
+	  margin-top: 285px;	  
+  }
+  
   
   
   .title {
@@ -224,6 +249,31 @@ body {
 	background: url('../img/causal_lineaH.png') repeat-x;
 	background-position: top center;
   }
+  
+  .block {
+    border-radius: 5px;
+    margin-bottom: 150%;
+  }
+
+  .block-1x {
+	  height: 30px;
+	  width: 3px;
+  }
+
+  .block-2x {
+	  height: 60px;
+	  width: 3px;
+  }
+
+  .block-3x {
+    height: 20%;
+  }
+
+  .block-blueberry {
+    background: #008597;
+  }
+
+  
     
   
   
