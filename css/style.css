@@ -72,6 +72,11 @@ body {
 	  margin: 0 5px 10px 0;	  
 
   }
+  
+  .more{
+	  margin-top: 50px;
+	  width: 115px;
+  }
     
   
   .chatUser{
@@ -90,9 +95,9 @@ body {
 	  position: relative;
 	  background: #34ABDA;
 	  max-width: 470px;
-	  min-width: 100px;
+	  min-width: 270px;
 
-	  padding: 4px 15px 10px 25px;
+	  padding: 0px 10px 6px 20px;
 	  
 	  z-index: 1000;	
 	  word-wrap: break-word;
@@ -117,6 +122,8 @@ body {
 	  top: -8px;
 	  left: 40px;  
   }
+  
+ 
   
   
   .causalCard {
@@ -147,6 +154,11 @@ body {
  
  
 /* Sections */
+
+  #intro{
+   padding: 50px 0 0 0;
+  }
+
   
  #caseStudy{
   background-color: #34ABDA;
@@ -211,9 +223,8 @@ body {
 	background-color: #707070;
 	background: url('../img/causal_lineaH.png') repeat-x;
 	background-position: top center;
-   
   }
-  
+    
   
   
   
