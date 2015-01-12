@@ -131,15 +131,16 @@ body {
   
   
   .causalCard {
-	  text-align: center;
-	  background-color: white;
-	  background: url('../img/causal_curvas.png') no-repeat;
-	  background-position: top left;
-	  background-size: 90px 183px;	  
-      border: 1px solid #E7EAEC;
+	  text-align: right;
+	  padding: 16px 6px 0 0;
 	  height: 158.6px;
 	  width: 260px;
-    	-webkit-border-radius: 10px;
+	  border: 1px solid #E7EAEC;
+	  background-color: white;
+	  background: url('../img/causal_curvas.png') no-repeat;
+	  background-position: center left;
+	  background-size: 80px 170px;	  
+      	-webkit-border-radius: 10px;
     	-moz-border-radius:10px;
    		border-radius:10px;
   	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
@@ -147,9 +148,28 @@ body {
   	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
   }
   
+  .causalCard h3{
+	  color: #686868;
+	  font-size: 15px;
+	  margin-right: 5px;
+  }
+  
+  .causalCard p{
+	  color: #686868;
+	  font-size: 11px;
+	  line-height: 3px;
+	  margin-right: 5px;	  
+  }
+  
+  
+  .causalCard:hover {
+	  border: 1px solid #F3C880;
+	  cursor: pointer;
+  } 
+  
   .causalCardBack{
 	  background-color: white;
-      border: 1px solid #E7EAEC;
+      /*border: 1px solid #E7EAEC */
 	  height: 158.6px;
 	  width: 260px;
     	-webkit-border-radius: 10px;
