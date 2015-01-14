@@ -23,7 +23,7 @@ body {
 	 /*background-position: top center; */
 	 font-size: 13px;
 	 color: #585858;
-	 
+	 margin-bottom: 60px;
  }
  
  p{
@@ -88,7 +88,6 @@ body {
   	  
   .chatUser img {
 	  height: 65px;
-	  border: solid 3px #A8A8A8;
 	  float: left;
   }
   
@@ -104,7 +103,7 @@ body {
 	  background: #34ABDA;
 	  max-width: 470px;
 	  min-width: 400px;
-	  margin: 3px 0 0 0;
+	  margin: 8px 0 0 0;
 	  padding: 0px 14px 10px 20px;
 	  
 	  z-index: 1000;	
@@ -130,9 +129,41 @@ body {
 	  top: -8px;
 	  left: 40px;  
   }
-  
  
+ 
+  .chatBubbleGrey{
+	  float: left;
+	  position: relative;
+	  background-color: #A8A8A8;
+	  max-width: 470px;
+	  min-width: 400px;
+	  margin: 8px 0 0 0;
+	  padding: 0px 14px 10px 20px;
+	  z-index: 1000;	
+	  word-wrap: break-word;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 20px;
+	  -webkit-transform: translate3d(0,0,0); /*Samsung android zindex problem fix? */
+  }
   
+  .chatBubbleGrey:after {
+	  content: '';
+	  position: absolute;
+	  border-style: solid;
+	  border-width: 0 10px 8px;
+	  border-color: #A8A8A8 transparent;
+	  display: block;
+	  width: 0;
+	  z-index: 1;
+	  margin-left: -10px;
+	  top: -8px;
+	  left: 40px;  
+  }
+  
+  
+  
+  /* Chat Elements */
   
   .causalCard {
 	  text-align: right;
@@ -189,33 +220,6 @@ body {
   }
   
   
-  
-/* Side Bar */
-    
-  .leftBar{
-	  text-align: center;
-  	
-  }
-
-  .welcome{
-	  margin-top: 80px;	  
-  }
-
-  
-  .caseStudy1{
-	  margin: 0 0 12px 0;
-  }
-  
-  .contactUs{
-	  margin: 28px 0 12px 0;	  
-  }
-  
-  
-  .block {
-	height: 100%;
-	width: 5px;
-  }
-
   .kidis{
 	  min-height: 80px;
 	  max-width: 428px;
@@ -239,8 +243,36 @@ body {
   	
   }
   
+ 
   
   
+  
+/* Side Bar */
+    
+  .leftBar{
+	  text-align: center;
+  	
+  }
+
+  .welcome{
+	  margin-top: 80px;	  
+  }
+
+  
+  .caseStudy1{
+	  margin: 0 0 12px 0;
+  }
+  
+  .contactUs{
+	  margin: 28px 0 12px 0;	  
+  }
+  
+  
+  .block {
+	height: 146px;
+	width: 5px;
+  }
+
   
   .title {
 	  margin: 26px 0px 0px 5px;   	
@@ -251,7 +283,7 @@ body {
 /* Sections */
 
   #intro{
-   padding: 50px 0 0 0;
+   padding: 40px 0 80px 0;
   }
 
   
@@ -274,8 +306,11 @@ body {
  
  
  #footer{
-	 margin: 150px 0 40px 0;
-	 min-height: 50px;
+	 position: fixed;
+	 bottom: 0;
+	 width: 100%;
+	 background-color: white;
+	 z-index: 1000;
  }
  
  #footer p{
@@ -335,6 +370,31 @@ body {
   }
   
   
+   /* Border Colors */
+  .greyB{
+	  border: solid 3px #A8A8A8;
+  }
+  
+  .blueB{
+  	border: solid 3px #34ABDA;
+  }
+
+  .greenB{
+  	border: solid 3px #C6E2CE;
+  }
+
+  .pinkB{
+  	border: solid 3px #EAD0DB;
+  }
+
+  
+  
+  .greyBAfter{
+  	border-color: #A8A8A8 transparent;
+  }
+  
+  
+    
   /* Causal's Rainbow */
 
   .pink {
@@ -380,8 +440,7 @@ body {
   .circle {
       -moz-border-radius: 50px/50px;
       -webkit-border-radius: 50px 50px;
-      border-radius: 50px/50px;
-      border:solid 2px grey;
+      border-radius: 50px/50px;;
       width:16px;
       height:16px;   
   }
