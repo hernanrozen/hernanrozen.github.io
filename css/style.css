@@ -288,15 +288,30 @@ body {
 
   
  #caseStudy{
-  background-color: #34ABDA;
-  padding: 20px 0 30px 0;
-  min-height: 500px;
+	 margin: 0 0 70px 5px;
+	 padding: 0px 10px 20px 10px;
+	 float: left;
+	 position: relative;
+	 background: white;
+	 border: solid 2px #34ABDA;
+	 width: 100%;
+	 min-width: 400px;
+	 word-wrap: break-word;
+	 -webkit-border-radius: 10px;
+	 -moz-border-radius: 10px;
+	 border-radius: 20px;
+  
  }
  
- .screenshot{
-	 height: 400px;
+ #caseStudy .screenshot{
+	 height: 100px;
  }
  
+  #caseStudy p{
+	  font-size: 14px;
+  }
+ 
+
  
  #contactUs{
 	 background-color: white;
