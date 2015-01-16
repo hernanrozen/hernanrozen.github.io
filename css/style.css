@@ -21,10 +21,9 @@ html {
 
 body {
 	 /*background-position: top center; */
-     margin-bottom: 200px;
 	 font-size: 13px;
 	 color: #585858;
-	 
+	 margin-bottom: 60px;
  }
  
  p{
@@ -54,7 +53,7 @@ body {
 /* Header */   
 
    .header{
-	   margin: 0 0 60px 0;
+	  
    }
        
   .logo {
@@ -65,24 +64,37 @@ body {
 /* MAIN PAGE */  
   
   .chatBlockUs{
-	  margin: 0 0 10px 5px;
+	  margin: 0 0 16px 5px;
   }
   
   .chatBlockThem{
-	  margin: 0 5px 10px 0;	  
+	  margin: 0 5px 16px 0;	  
 
   }
-    
   
+  .more{
+	  margin: 40px 0 60px 0;
+	  width: 100%;
+  }
+  
+  .moreIcon{
+	  width: 130px;
+  	
+  }
+     
   .chatUser{
-	  margin: 0 0 0 0;
-
+	  margin: 0 0 0 8px;
   }
-  
+  	  
   .chatUser img {
-	  height: 40px;
+	  height: 65px;
+	  float: left;
   }
   
+  .chatUserName{
+	  float: left;
+	  margin: 23px 0 0 5px;
+  }
   
   
   .chatBubble{
@@ -90,9 +102,9 @@ body {
 	  position: relative;
 	  background: #34ABDA;
 	  max-width: 470px;
-	  min-width: 100px;
-
-	  padding: 4px 15px 10px 25px;
+	  min-width: 400px;
+	  margin: 8px 0 0 0;
+	  padding: 0px 14px 10px 20px;
 	  
 	  z-index: 1000;	
 	  word-wrap: break-word;
@@ -117,17 +129,53 @@ body {
 	  top: -8px;
 	  left: 40px;  
   }
+ 
+ 
+  .chatBubbleGrey{
+	  float: left;
+	  position: relative;
+	  background-color: #A8A8A8;
+	  max-width: 470px;
+	  min-width: 400px;
+	  margin: 8px 0 0 0;
+	  padding: 0px 14px 10px 20px;
+	  z-index: 1000;	
+	  word-wrap: break-word;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 20px;
+	  -webkit-transform: translate3d(0,0,0); /*Samsung android zindex problem fix? */
+  }
   
+  .chatBubbleGrey:after {
+	  content: '';
+	  position: absolute;
+	  border-style: solid;
+	  border-width: 0 10px 8px;
+	  border-color: #A8A8A8 transparent;
+	  display: block;
+	  width: 0;
+	  z-index: 1;
+	  margin-left: -10px;
+	  top: -8px;
+	  left: 40px;  
+  }
+  
+  
+  
+  /* Chat Elements */
   
   .causalCard {
-	  text-align: center;
+	  text-align: right;
+	  padding: 16px 6px 0 0;
+	  height: 158.6px;
+	  width: 260px;
+	  border: 1px solid #E7EAEC;
+	  background-color: white;
 	  background: url('../img/causal_curvas.png') no-repeat;
-	  background-position: top left;
-	  background-size: 90px 180px;	  
-      border: 1px solid #E7EAEC;
-	  height: 166px;
-	  width: 300px;
-    	-webkit-border-radius: 10px;
+	  background-position: center left;
+	  background-size: 80px 170px;	  
+      	-webkit-border-radius: 10px;
     	-moz-border-radius:10px;
    		border-radius:10px;
   	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
@@ -135,10 +183,96 @@ body {
   	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
   }
   
-  .callout{
+  .causalCard h3{
+	  color: #686868;
+	  font-size: 15px;
+	  margin-right: 5px;
+  }
+  
+  .causalCard p{
+	  color: #686868;
+	  font-size: 11px;
+	  line-height: 3px;
+	  margin-right: 5px;	  
+  }
+  
+  
+  .causalCard:hover {
+	  border: 1px solid #C6E2CE;
+	  cursor: pointer;
+	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+	  	-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+  } 
+  
+  .causalCardBack{
+	  background-color: white;
+      /*border: 1px solid #E7EAEC */
+	  height: 158.6px;
+	  width: 260px;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius:10px;
+   		border-radius:10px;
+  	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+  	  	-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+  	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
 	  
   }
   
+  
+  .kidis{
+	  min-height: 80px;
+	  max-width: 428px;
+	  border: 1px solid white;
+	  text-align: center;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius:10px;
+	  border-radius:10px;
+	  
+	  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+	  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+	  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.05);
+  }
+  
+  .kidis:hover{
+	  border: 1px solid #C6E2CE;
+	  cursor: pointer;
+	  	-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+	  	-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+	  	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+  	
+  }
+  
+ 
+  
+  
+  
+/* Side Bar */
+    
+  .leftBar{
+	  text-align: center;
+  	
+  }
+
+  .welcome{
+	  margin-top: 80px;	  
+  }
+
+  
+  .caseStudy1{
+	  margin: 0 0 12px 0;
+  }
+  
+  .contactUs{
+	  margin: 28px 0 12px 0;	  
+  }
+  
+  
+  .block {
+	height: 146px;
+	width: 5px;
+  }
+
   
   .title {
 	  margin: 26px 0px 0px 5px;   	
@@ -147,29 +281,61 @@ body {
  
  
 /* Sections */
+
+  #intro{
+   padding: 40px 0 80px 0;
+  }
+
   
  #caseStudy{
-  background-color: #34ABDA;
-  padding: 20px 0 30px 0;
-  min-height: 500px;
+	 margin: 0 0 70px 5px;
+	 padding: 0px 10px 20px 10px;
+	 float: left;
+	 position: relative;
+	 background: white;
+	 border: solid 2px #34ABDA;
+	 width: 100%;
+	 min-width: 400px;
+	 word-wrap: break-word;
+	 -webkit-border-radius: 10px;
+	 -moz-border-radius: 10px;
+	 border-radius: 20px;
+  
  }
  
- .screenshot{
-	 height: 400px;
+ #caseStudy .screenshot{
+	 height: 100px;
  }
  
+  #caseStudy p{
+	  font-size: 14px;
+  }
+ 
+
  
  #contactUs{
-  background-color: white;
-  padding: 20px 0 30px 0;
-  min-height: 500px;
+	 background-color: white;
+	 padding: 20px 0 30px 0;
+	 min-height: 500px;
  }
  
  
  #footer{
-  background-color: darkgrey;
-  padding: 20px 0 30px 0;
-  min-height: 500px;
+	 position: fixed;
+	 bottom: 0;
+	 width: 100%;
+	 background-color: white;
+	 z-index: 1000;
+ }
+ 
+ #footer p{
+	 font-size: 12px;
+	 margin-top: 30px;
+ }
+ 
+ 
+ #wrapIt{
+	 margin: 20px 0 20px 0;
  }
  
   
@@ -196,27 +362,105 @@ body {
   }  
   
   
-  /* Color pallete */
+/* Color pallete */
   
+  /* Font Colors */
   .whiteF{
 	   color: white;
+  }
+  
+  
+  /* Background Colors */
+  
+  .causalBlue{
+	  background-color: #34ABDA;
+  }
+  
+  .white{
+  	   background-color: white ;
   }
   
   .grey{
   	   background-color: #A8A8A8 ;
   }
   
-  .causalBar{
-   	height: 5px;
-	background-color: #707070;
-	background: url('../img/causal_lineaH.png') repeat-x;
-	background-position: top center;
-   
+  
+   /* Border Colors */
+  .greyB{
+	  border: solid 3px #A8A8A8;
+  }
+  
+  .blueB{
+  	border: solid 3px #34ABDA;
+  }
+
+  .greenB{
+  	border: solid 3px #C6E2CE;
+  }
+
+  .pinkB{
+  	border: solid 3px #EAD0DB;
+  }
+
+  
+  
+  .greyBAfter{
+  	border-color: #A8A8A8 transparent;
   }
   
   
+    
+  /* Causal's Rainbow */
+
+  .pink {
+    background: #EAD0DB;
+  }
+  
+  .pinkish {
+    background: #E4C1B2;
+  }
+  
+  .orange {
+    background: #F2CA8A;
+  }
+  
+  .yellow {
+    background: #FFE9C2;
+  }
+ 
+  .green {
+    background: #C6E2CE;
+  } 
+  
+  .blue {
+    background: #C2E4F7;
+  }
+  
+  .violet {
+    background: #BECFE8;
+  }
   
   
+  /* END Causal's Rainbow */
+  
+  
+  
+  .causalBar{
+   	height: 5px;
+	background-color: white;
+	background: url('../img/causal_lineaH.png') repeat-x;
+	background-position: top center;
+  }
+  
+  .circle {
+      -moz-border-radius: 50px/50px;
+      -webkit-border-radius: 50px 50px;
+      border-radius: 50px/50px;;
+      width:16px;
+      height:16px;   
+  }
+  
+
   
   /* Postitioning, Alignment & Special Media */
   
@@ -249,6 +493,11 @@ body {
 	  
 	  
   }
+  
+  
+  
+  
+
 
 
   
